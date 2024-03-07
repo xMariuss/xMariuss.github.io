@@ -11,7 +11,7 @@
 }
 
 [data-theme="dark"] {
-    --mycolor:#ea1046;
+    --mycolor:#ff0000;
     --mybackground: rgba(16, 234, 27, 0.8);
     --primary-color: #9A97F3;
     --secondary-color: #818cab;
@@ -308,7 +308,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 3px;
   font-size: 15px;
   font-weight: 600;
-  color: #222222;
+  color: var(--font-color);
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
@@ -325,7 +325,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: var(--mycolor);
+  background-color: var(--font-color);
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -512,14 +512,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #222222;
+  color: var(--font-color);
   font-family: "Poppins", sans-serif;
 }
 #hero h1 span {
   color: var(--mycolor);
 }
 #hero h2 {
-  color: #555555;
+  color: var(--font-color);
   margin: 5px 0 30px 0;
   font-size: 24px;
   font-weight: 400;
@@ -622,6 +622,7 @@ section {
   margin: 15px 0 0 0;
   font-size: 32px;
   font-weight: 700;
+  color: var(--font-color);
 }
 .section-title h3 span {
   color: var(--mycolor);
@@ -629,6 +630,7 @@ section {
 .section-title p {
   margin: 15px auto 0 auto;
   font-weight: 600;
+  color: var(--font-color);
 }
 @media (min-width: 1024px) {
   .section-title p {
@@ -686,6 +688,10 @@ section {
 /*--------------------------------------------------------------
 # Featured Services
 --------------------------------------------------------------*/
+.featured-services {
+  background: var(--bg-color);
+}
+
 .featured-services .icon-box {
   padding: 30px;
   position: relative;
@@ -883,6 +889,9 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+#services {
+  background: var(--bg-color);
+}
 .services .icon-box {
   text-align: center;
   border: 1px solid #e2eefd;
@@ -1021,6 +1030,9 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+#portfolio {
+  background: var(--bg-color);
+}
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 15px auto;
@@ -1389,6 +1401,9 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+#contact {
+  background: var(--bg-color);
+}
 .contact .info-box {
   color: #444444;
   text-align: center;
@@ -1557,7 +1572,7 @@ section {
 }
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  background: var(--bg-color);
 }
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
