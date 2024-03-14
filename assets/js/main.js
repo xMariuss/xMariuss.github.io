@@ -291,14 +291,15 @@ function switchTheme(e) {
     if (e.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
 
-        document.getElementById("logo").src="assets/img/logo.png";
+        
+        document.getElementById("logo").style.filter = "invert(100%)";
         localStorage.setItem('theme', 'dark');
         
     }
     else {        document.documentElement.setAttribute('data-theme', 'light');
     
           localStorage.setItem('theme', 'light');
-          document.getElementById("logo").src="assets/img/logo1.png";
+          document.getElementById("logo").style.filter = "invert(0%)";
     }    
 }
 
